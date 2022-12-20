@@ -1,0 +1,27 @@
+p.big{ 
+    /* for every p with class big */
+    font-size: 20px;
+}
+
+article > p{ /* target for every p element that is direct child of article element not ouside the article not even inside of div
+    eg: <article> <p>....<p></article>
+    <article><div><p>....<p></div></article> */
+
+        
+}
+
+article p{
+    /* this is discendant selector: for every p element belonging to article 
+    eg: <article> <p>....<p></article>
+    <article><div><p>....<p></div></article>  */
+    color: blue;
+    
+}
+
+a:link, a:visited{
+    display
+}
+
+a:hover, a:active{
+            
+}

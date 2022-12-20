@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+/* menu div:nth-child() */
+/* 
+p.big{font-size: 20px;}
+article > p{ }
+article p{color: blue;} */
+    /* for every p with class big */
+/* target for every p element that is direct child of article element not ouside the article not even inside of div
+    eg: <article> <p>....<p></article>
+    <article><div><p>....<p></div></article> */
+/* this is discendant selector: for every p element belonging to article 
+    eg: <article> <p>....<p></article>
+    <article><div><p>....<p></div></article>  */
+html, body{
+    height: 100%;
+}
+    h1, h2,h3{
+    text-align: center;
+}
+    li{
+    list-style: none;
+}
+/* pseudo-class selector */
+a:link, a:visited{
+    text-decoration: none;
+    background-color:brown;
+    color: aliceblue;
+    border: 1px solid pink;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px;
+    display: block;
+}
+a:hover, a:active{
+    background-color: lawngreen;
+    color: darkorange;
+
+}
+
+.web-dev a:link, a:visited{
+    text-decoration: none;
+    background-color:brown;
+    color: aliceblue;
+    border: 1px solid pink;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px;
+    display: block;
+    
+}
+.web-dev a:hover, a:active{
+    background-color: lawngreen;
+    color: darkorange;
+    
+}
+
+.web-dev li:nth-child(3) {
+    /* nth child selector is used to target a particular child within the list */
+    font-size: 24px;
+}
+menu div:nth-child(odd) {
+    /* for a specific nth of any child */
+    background-color: crimson;
+
+}
+menu div:nth-child(even){
+    background-color: aqua;
+    cursor: pointer;
+}
+menu div:nth-child(6){
+background-color: rgb(79, 139, 0);
+
+}
+
+.font-family{
+    /* text property */
+    font-size: 1.5em;
+    font-weight:10 ;
+    font-style: normal ;
+    font-variant:unset;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-transform:capitalize ;
+    text-align: start ;
+    background: rgb(19, 140, 247);
+    border: 1px solid pink;
+    padding: 10 30px;
+    margin: 2px 40px;
+
+
+}
+
+    /* over flow is use to a box property where some content is not displaying compleately */
+
+
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,128,6,0.9)),url(/img/img1.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    <!-- list-style-image: url(); -->
+    <!-- list-style-position: inside; -->
+    height: 100%;
+
+}
+.rounded-box{
+    background-color: #4ff6c7;
+    width: 200px;
+    padding: 50px 0px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: 3rem;
+    <!-- border-bottom-right-radius: 50px; -->
+    <!-- border-bottom-left-radius: 50px; -->
+    <!-- border-top-right-radius: 50px; -->
+    <!-- border-top-left-radius: 50px; -->
+}
+
+.font-poroperties{
+    /*font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
+     font-family: tahoma;
+     */
+     font: bold italic 14px tahoma;
+}
+
+.box-model h2{
+    background-color: rgb(30, 241, 241);
+    /* padding: 50px; */
+    /* padding-top: 50px; */
+
+    text-align: start;
+}
+/* working with floating properties clear is a term use in floating ppts as nothing is allowed to float in accordance to the given vale
+eg clear left the float at left should not affect the left element*/
+.float{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    /* float: left; */
+    /* margin-right: 10px; */
+}
+
+#p1{
+    background-color: #a52a2a;
+    /* float: right; */
+}
+
+#p2{
+    background-color: #deb887;
+}
+
+#p3{
+    background-color: #5f9ea0;
+    /* clear: left; */
+}
+
+#p4{
+    background-color: #ff7f50;
+}
+
+section{
+    /* clear: left; */
+}
+
+/* manipulating the floating ppts */
+.floating{
+    width: 50%;
+    /* border: 1px solid black; */
+    float: left;
+    padding: 10px;
+}
+
+#p5{
+    /* background-color: #5f9ea0; */
+}
+
+#p6{
+    /* background-color: #a52a2a; */
+}
