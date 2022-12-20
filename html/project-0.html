@@ -4,32 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        input, button{
+            width: 80%;
+            border: 1px solid #555;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
     <title>udemy</title>
 </head>
 <body>
     <nav>
         <a href="home.html">Home</a>
+        &nbsp;
         <a href="contact.html">Contact Us</a>
+        &nbsp;
         <a href="blog.html">Blog</a>
+        &nbsp;
     </nav>
     <main>
-        <table border="1" width="100%">
+        <table width="100%">
             <body>
                 <tr>
                     <td>
                         BLOG IN HERE
                         <!-- article section -->
                         <article>
-                            <h4>welcome to html</h4>
-                            <h6>Dec 16, 2023</h6>
-                            <small>Dec 16, 2023</small>
+                            <h1>welcome to html</h1>
+                            <small><b>Date:16 Dec, 2022</b></small>
+                            <div>
+                                <img src="/img/img1.jpg" width="200" alt="">
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum libero a atque aspernatur reiciendis ex voluptatum soluta, fuga minus.
+                            </p>
+                
+                            <p>
+                                <a href="blog/welcome_to_html.html">Read More</a>
+                            </p>
+                        </article>
+                        <!-- end of article -->
+                        
+                        
+                        <!-- article section -->
+                        <article>
+                            <h1>meet our team</h1>
+                            <small><b>Date:16 Dec, 2022</b></small>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laboriosam?</p>
                             <p>
                                 <a href="blog/welcome_to_html.html">Read More</a>
                             </p>
                         </article>
                         <!-- end of article -->
-                        <hr>
                         
                         <!-- article section -->
                         <article>
@@ -42,35 +75,31 @@
                             </p>
                         </article>
                         <!-- end of article -->
-                        <hr>
-                        <!-- article section -->
-                        <article>
-                            <h4>welcome to html</h4>
-                            <h6>Dec 16, 2023</h6>
-                            <small>Dec 16, 2023</small>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laboriosam?</p>
-                            <p>
-                                <a href="blog/welcome_to_html.html">Read More</a>
-                            </p>
-                        </article>
-                        <!-- end of article -->
-                        <hr>
+                    
                     </td>
                     
                     <td width="25%" valign="top">
+                        <h4>&nbsp;</h4>
                         SUBCRIBE HERE
 
                         <form action="GET">
                             <div>
                                 <label for="firstName">First Name</label>
-                                <input type="text"
+                                <br><input type="text"
                                  name="firstname" id="firstname" placeholder="your first name"
                                  class="">
                             </div>
 
                             <div>
-                                <label for="email">email</label>123123 <br>
+                                <label for="email">email</label> <br>
+                                <input 
+                                type="email"
+                                placeholder="email"
+                                id="email"
+                                required="required">
                             </div>
+                            <br>
+                            <button>SUBSCRIBE</button>
                         </form>
 
                     </td>
